@@ -118,12 +118,22 @@ svg {
 .search-container {
   display: flex;
   align-items: center;
+  gap: 12px;
+}
+
+.search:last-child {
   gap: 8px;
 }
 
 .search-container img {
-  height: 1.5rem;
-  width: auto;
+  height: auto;
+  width: 1.25rem;
+}
+
+img.profile-picture {
+  border-radius: 100px;
+  width: 2.2rem;
+  height: auto;
 }
 
 .search-container h2 {

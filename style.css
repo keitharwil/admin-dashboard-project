@@ -83,7 +83,7 @@ svg {
   height: 100dvh;
   width: auto;
   grid-template-columns: 200px 1fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 128px 1fr;
 }
 
 /* SIDEBAR */
@@ -104,14 +104,16 @@ svg {
 
 /* HEADER */
 .header {
-  padding: 12px 0;
+  padding-top: 12px;
+  height: 128px;
 }
 
 /* SEARCH */
 
 .search {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 4dvw;
   gap: 16px;
 }
 
@@ -130,14 +132,15 @@ svg {
   width: 1.25rem;
 }
 
-img.profile-picture {
+.search-container > img.profile-picture {
   border-radius: 100px;
   width: 2.2rem;
   height: auto;
+  margin-right: 8px;
 }
 
 .search-container h2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 800;
 }
 
@@ -157,4 +160,54 @@ img.profile-picture {
 
 .search-container input[type=text]:focus-visible {
   outline: none;
+}
+
+/* SUBHEADER */
+
+.sub-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 4dvw 0;
+}
+
+.sub-header > div.profile-greet {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sub-header > div.profile-greet > div > p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.sub-header > div > img {
+  border-radius: 100px;
+  height: auto;
+  width: 4rem;
+}
+
+div.buttons {
+  display: flex;
+  flex: none;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+div.buttons > button {
+  border-radius: 16px;
+  border: none;
+  padding: 8px 16px;
+  background-color: rgb(25, 146, 212);
+  border: 1px solid rgb(25, 146, 212);
+  color: white;
+}
+
+div.buttons  > button:hover {
+  border: 1px solid rgb(25, 146, 212);
+  background-color: white;
+  color: rgb(25, 146, 212);
+  cursor: pointer;
 }

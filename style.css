@@ -83,7 +83,7 @@ svg {
   height: 100dvh;
   width: auto;
   grid-template-columns: 200px 1fr;
-  grid-template-rows: 128px 1fr;
+  grid-template-rows: calc(4px * 35) 1fr;
 }
 
 /* SIDEBAR */
@@ -105,11 +105,10 @@ svg {
 /* HEADER */
 .header {
   padding-top: 12px;
-  height: 128px;
+  height: calc(4px * 35);
 }
 
 /* SEARCH */
-
 .search {
   display: flex;
   justify-content: space-between;
@@ -163,7 +162,6 @@ svg {
 }
 
 /* SUBHEADER */
-
 .sub-header {
   display: flex;
   align-items: center;
@@ -210,4 +208,10 @@ div.buttons  > button:hover {
   background-color: white;
   color: rgb(25, 146, 212);
   cursor: pointer;
+}
+
+/* MAIN CONTENT */
+div.main-content {
+  background-color: rgb(226, 232, 240);
+  box-shadow: 1px 10px 5px -9px rgba(0,0,0,0.75) inset;
 }
